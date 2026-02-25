@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /c/Users/ELCOT/OneDrive/Documents/code/opencode && npm run build 2>&1 | grep -i \"error\" | head -20 || echo \"No build errors found\")",
+      "Bash(cd /c/Users/ELCOT/OneDrive/Documents/code/opencode/packages/opencode && npx tsc --noEmit 2>&1 | grep -i \"mcp\" | head -20 || echo \"No TypeScript errors in MCP code\")",
+      "Bash(cd:*)",
+      "Bash(grep:*)"
+    ]
+  }
+}
